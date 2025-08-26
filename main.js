@@ -151,6 +151,9 @@ function showModal(product) {
       <li class="list-group-item ${catTextClass}"><b>${t.category}:</b> ${product.category}</li>
     </ul>
   `;
+  // Modal kapat butonunu dile göre güncelle
+  const closeBtn = document.querySelector('#productModal .modal-footer button[data-bs-dismiss="modal"]');
+  if (closeBtn) closeBtn.textContent = t.close;
   const modal = new bootstrap.Modal(document.getElementById('productModal'));
   modal.show();
 }
