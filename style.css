@@ -1,0 +1,73 @@
+/* Kart başlıklarını daha büyük ve kalın yap */
+.card-filter .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+/* Filtre kartlarının yüksekliğini artır */
+.card-filter {
+  min-height: 180px;
+  height: 100%;
+}
+/* Modern ve renkli filtre kartları */
+.card-filter {
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.card-filter:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+  transform: translateY(-4px) scale(1.04);
+}
+.card-parfume {
+  background: linear-gradient(135deg, #f7cac9 0%, #92a8d1 100%);
+  color: #5E2C1A;
+}
+.card-niche {
+  background: linear-gradient(135deg, #b2f7ef 0%, #f6d6ad 100%);
+  color: #2c3e50;
+}
+.card-color {
+  background: linear-gradient(135deg, #f9f871 0%, #f7cac9 100%);
+  color: #5E2C1A;
+}
+.card-all {
+  background: linear-gradient(135deg, #e2eafc 0%, #b2f7ef 100%);
+  color: #2c3e50;
+}
+/* Sadece tablo scroll edilsin, üst alan sabit kalsın */
+.table-scroll-area {
+  max-height: 420px;
+  overflow-y: auto;
+}
+/* Ana katmanı (card) sabitle */
+/* Önceki sabit layer ve tablo alanı kaldırıldı, eski stil geri geldi */
+/* Kart sabit değil, tüm içerik birlikte hareket eder */
+.home-bg {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #FAE5A0 0%, #5E2C1A 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #5E2C1A;
+  overflow-x: hidden;
+  padding-top: 32px;
+}
+/* Tablo kategoriye göre yazı renkleri */
+.text-femer { color: #d6002f !important; font-weight: 600; }
+.text-mashkull { color: #0074d9 !important; font-weight: 600; }
+/* Tablo kategoriye göre satır renkleri */
+.row-femer { background-color: #ffe6f2 !important; }
+.row-mashkull { background-color: #e6f0ff !important; }
+.row-unisex { background-color: #f2f2f2 !important; }
+body, .home-bg {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #FAE5A0 0%, #5E2C1A 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #5E2C1A;
+  overflow-x: hidden;
+}
